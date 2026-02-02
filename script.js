@@ -45,7 +45,7 @@ function doMerge() {
   prStatus.style.color = "var(--green)";
   prStatus.style.background = "rgba(49,208,127,.12)";
 
-  title.textContent = "Merged into my heart 💖";
+  title.textContent = "Merged into my heart babu 💖";
 
   statusLine.innerHTML =
     `<span class="mono">Checks:</span> ` +
@@ -194,3 +194,4 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") showModal(false);
   if (e.key.toLowerCase() === "m") doMerge(); // “m” for merge
 });
+
