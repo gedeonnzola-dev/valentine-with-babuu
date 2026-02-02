@@ -1,16 +1,16 @@
 :root{
-  --bg1:#070812;
-  --bg2:#0e1230;
-  --card:rgba(255,255,255,.06);
-  --stroke:rgba(255,255,255,.13);
-  --text:#f7f7ff;
-  --muted:rgba(255,255,255,.70);
-  --muted2:rgba(255,255,255,.55);
-  --pink:#ff4fd8;
-  --pink2:#ff7ae6;
-  --green:#31d07f;
-  --red:#ff4d6d;
-  --shadow: 0 18px 80px rgba(0,0,0,.45);
+  --bg1:#f3f4f6;   /* light gray */
+  --bg2:#e5e7eb;   /* slightly darker gray */
+  --card:rgba(255,255,255,.75);
+  --stroke:rgba(0,0,0,.08);
+  --text:#111827;  /* near-black */
+  --muted:#4b5563;
+  --muted2:#6b7280;
+  --pink:#ec4899;
+  --pink2:#f472b6;
+  --green:#10b981;
+  --red:#ef4444;
+  --shadow: 0 20px 60px rgba(0,0,0,.12);
   --radius: 20px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
@@ -22,9 +22,9 @@ body{
   color:var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background:
-    radial-gradient(1200px 700px at 20% 10%, rgba(255,79,216,.22), transparent 60%),
-    radial-gradient(900px 600px at 85% 10%, rgba(49,208,127,.15), transparent 55%),
-    linear-gradient(160deg, var(--bg1), var(--bg2));
+    radial-gradient(800px 500px at 20% 0%, rgba(236,72,153,.12), transparent 60%),
+    radial-gradient(600px 400px at 80% 10%, rgba(16,185,129,.10), transparent 55%),
+    linear-gradient(180deg, var(--bg1), var(--bg2));
   overflow-x:hidden;
 }
 
@@ -32,10 +32,10 @@ body{
   position:fixed;
   inset:-20%;
   background:
-    radial-gradient(closest-side at 30% 25%, rgba(255,79,216,.12), transparent 70%),
-    radial-gradient(closest-side at 70% 35%, rgba(255,122,230,.10), transparent 70%),
-    radial-gradient(closest-side at 55% 70%, rgba(49,208,127,.08), transparent 72%);
-  filter: blur(30px);
+    radial-gradient(closest-side at 30% 20%, rgba(236,72,153,.10), transparent 70%),
+    radial-gradient(closest-side at 70% 25%, rgba(244,114,182,.08), transparent 70%),
+    radial-gradient(closest-side at 55% 70%, rgba(16,185,129,.06), transparent 75%);
+  filter: blur(40px);
   pointer-events:none;
 }
 
@@ -457,3 +457,4 @@ body{
   .cover{min-height:260px}
   .frame{min-height:280px}
 }
+
